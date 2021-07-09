@@ -163,3 +163,37 @@ section.section-5 header.perfils img {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
+
+@media screen and (max-width: 800px) {
+    main.principal {
+        grid-template-columns: 100%;
+        grid-template-rows:  2fr 1fr 1fr 2fr 2fr;
+        grid-template-areas: 
+        'sessão-1'
+        'sessão-2'
+        'sessão-3'
+        'sessão-4'
+        'sessão-5';
+    }
+
+    section.section-1 {
+        grid-area: sessão-1;
+    }
+
+    section.section-2 {
+        grid-area: sessão-2;
+    }
+
+    section.section-3 {
+        grid-area: sessão-3;
+    }
+
+    section.section-4 {
+        grid-area: sessão-4;
+    }
+
+    section.section-5 {
+        grid-area: sessão-5;
+    }
+}
